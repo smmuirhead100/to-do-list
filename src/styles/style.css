@@ -1,0 +1,39 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 100, 192);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    grid-row-start: 2;
+    padding: 30px;
+    gap: 30px;
+}
+
+.newBtn {
+    background-color: rgb(111, 213, 111);
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+}
+
+.right {
+    background-color: beige;
+    grid-row-start: 2;
+}
