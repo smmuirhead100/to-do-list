@@ -1,6 +1,8 @@
+import { addToDoObject } from "./addToDoObject.js";
+
 function loadHomePage() {
     //select content 
-    const content = document.querySelector(".content")
+    const content = document.querySelector(".content");
     
     // header
     const header = document.createElement("header");
@@ -16,6 +18,10 @@ function loadHomePage() {
     
     const newButton = document.createElement("button");
     newButton.className = "newBtn";
+    newButton.textContent = "Add Item";
+    newButton.addEventListener('click', function (e) {
+        addToDoObject()
+     });
 
     leftSidebar.appendChild(leftHeading);
     leftSidebar.appendChild(newButton);
